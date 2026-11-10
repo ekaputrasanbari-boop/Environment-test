@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Environment Quiz</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">🌱 ENVIRONMENT QUIZ</div>
+        <p>Environmental Knowledge & Competency Test</p>
+    </header>
+
+    <main class="container">
+
+        <section id="home" class="card">
+            <h1>Selamat Datang!</h1>
+
+            <p>
+                Tingkatkan pengetahuan Anda tentang pengelolaan
+                lingkungan melalui latihan soal interaktif.
+            </p>
+
+            <h3>Pilih Kategori Pembelajaran</h3>
+
+            <select id="category">
+                <option value="all">Environment Fundamentals</option>
+            </select>
+
+            <p class="info">Jumlah soal: 5 pertanyaan</p>
+
+            <button id="startButton">Mulai Ujian</button>
+        </section>
+
+        <section id="quiz" class="card hidden">
+
+            <div class="quiz-info">
+                <span id="questionNumber"></span>
+                <span>Environment Quiz</span>
+            </div>
+
+            <div class="progress">
+                <div id="progressBar"></div>
+            </div>
+
+            <h2 id="question"></h2>
+
+            <div id="options"></div>
+
+            <div id="explanation" class="explanation hidden"></div>
+
+            <button id="nextButton" disabled>
+                Soal Berikutnya
+            </button>
+
+        </section>
+
+        <section id="result" class="card hidden">
+
+            <h1>Hasil Ujian</h1>
+
+            <div class="score-circle">
+                <span id="finalScore">0</span>
+                <small>/ 100</small>
+            </div>
+
+            <h2 id="resultMessage"></h2>
+
+            <p id="scoreDetail"></p>
+
+            <button id="restartButton">Ulangi Ujian</button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Environment Quiz © 2026
+        <br>
+        Environmental Learning Platform
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
